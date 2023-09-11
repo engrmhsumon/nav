@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: black;
+}
+
+ul{
+    display: flex;
+    background-color: black;
+}
+
+ul li{
+    list-style: none;
+    position: relative;
+}
+
+ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px 30px;
+    display: block;
+}
+
+ul li:hover{
+    background-color: rgb(87, 85, 86);
+    transition: all .3s ease-in-out;
+}
+
+ul ul{
+    display: none;
+    position: absolute;
+    width: 150px;
+    top: 100%;
+    left: 0;
+}
+ul li:hover>ul{
+    display: block;
+}
+
+ul ul ul{
+    display: none;
+    left: 100%;
+    top: 0;
+}
